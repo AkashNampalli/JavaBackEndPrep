@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.stream.Collectors;
 
 @Repository
-public class InMemoryRepository {
+public class UserInMemoryRepository {
     private Map<Integer, User> userMap ;
     private Integer userIdCounter;
 

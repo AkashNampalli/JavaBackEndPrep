@@ -1,18 +1,17 @@
 package com.demo.project.instagram.dao;
 
-import com.demo.project.instagram.database.InMemoryRepository;
+import com.demo.project.instagram.database.UserInMemoryRepository;
 import com.demo.project.instagram.dto.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Repository
 public class UserDAO {
 
     @Autowired
-    private InMemoryRepository database;
+    private UserInMemoryRepository database;
 
     public User getUser(Integer userId)
     {
